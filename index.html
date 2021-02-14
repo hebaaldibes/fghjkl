@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accounting</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/constructor.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+	 $(document).ready(function(){
+		
+      $("#qty1").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p1").html());
+                     var t=q*p;
+                     $("#total1").val(t);
+                      		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total1").val());
+                      $("#all_total").val(at);
+            }
+        });
+    $("#qty2").on({
+            
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");            
+               
+            },
+            keypress:function(event){
+                if (event.keyCode<48 ||event.keyCode>57) {
+                    alert("Please, Enter Number!");
+                    $(this).event.returnValue = false;
+
+                  }
+                   else{
+                    $(this).keyup(function(){
+                     var q=parseInt($(this).val());
+                     var p=parseFloat($("#p2").html());
+                     var t=q*p;
+                     $("#total2").val(t);
+                                })
+                   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total2").val());
+                      $("#all_total").val(at);
+            }
+        });
+      $("#qty3").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p3").html());
+                     var t=q*p;
+                     $("#total3").val(t);
+        		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total3").val());
+                      $("#all_total").val(at);
+            }
+        });
+        $("#qty4").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+                   
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p4").html());
+                     var t=q*p;
+                     $("#total4").val(t);
+        		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total4").val());
+                      $("#all_total").val(at);
+            }
+        });
+          $("#qty5").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p5").html());
+          	         var t=q*p;
+                     $("#total5").val(t);
+        		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total5").val());
+                      $("#all_total").val(at);
+            }
+        });
+       $("#qty6").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p6").html());
+                      var t=q*p;
+                     $("#total6").val(t);
+        		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total6").val());
+                      $("#all_total").val(at);
+            }
+        });
+         $("#qty7").on({
+        	
+            focus: function(){
+                $(this).css("background-color", "lightgray");
+          
+            },
+            blur: function(){
+                $(this).css("background-color", "lightblue");     	     
+               
+            },
+            keypress:function(event){
+            	if (event.keyCode<48 ||event.keyCode>57) {
+         		    alert("Please, Enter Number!");
+         		    $(this).event.returnValue = false;
+
+        		  }
+        		   else{
+        		   	$(this).keyup(function(){
+        		   	 var q=parseInt($(this).val());
+          	         var p=parseFloat($("#p7").html());
+                     var t=q*p;
+                     $("#total7").val(t);
+                    
+        		   	})
+        		   }
+            },
+            change: function(){
+                     var at=parseFloat($("#all_total").val())+parseFloat($("#total7").val());
+                      $("#all_total").val(at);
+            }
+        });
+
+             
+
+      })
+	</script>
+</head>
+<body>
+<header>
+	<h1>Bill HM</h1>
+</header>
+<section id="s1" class="container">
+	<table>
+		<tr>
+			<th>Product Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>Product1</td>
+			<td id="p1">0.25</td>
+			<td><input type="Number" id="qty1" placeholder="0" min="0"></td>
+			<td><input type="Number" id="total1" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product2</td>
+			<td id="p2">30.54</td>
+			<td><input type="Number" id="qty2" placeholder="0" min="0"></td>
+			<td><input type="Number" id="total2" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product3</td>
+			<td id="p3">572</td>
+			<td><input type="Number" id="qty3" placeholder="0" min="0"></td>
+			<td><input type="Number" id="total3" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product4</td>
+			<td id="p4">12.3</td>
+			<td><input type="Number" id="qty4" placeholder="0" min="0"></td>
+			<td><input type="Number" id="total4" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product5</td>
+			<td id="p5">145</td>
+			<td><input type="Number" id="qty5" placeholder="0" min="0" ></td>
+			<td><input type="Number" id="total5" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product6</td>
+			<td id="p6">56</td>
+			<td><input type="Number" id="qty6" placeholder="0" min="0" ></td>
+			<td><input type="Number" id="total6" placeholder="0" readOnly></td>
+		</tr>
+		<tr>
+			<td>Product7</td>
+			<td id="p7">253</td>
+			<td><input type="Number" id="qty7" placeholder="0" min="0" ></td>
+			<td><input type="Number" id="total7" placeholder="0" readOnly></td>
+		</tr>
+		<tr  id="tr0">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="3">All Total</td>
+			<td><input type="Number" id="all_total" value="0" placeholder="0" readOnly></td>
+		</tr>
+	</table>
+</section>
+</body>
+</html>
